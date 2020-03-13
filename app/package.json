@@ -1,0 +1,15 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": " ",
+  "main": "app.js",
+  "dependencies": {
+    "git": "^0.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo 'testing the whopper button'"
+  },
+  "author": "max slemaker",
+  "license": "ISC"
+}
