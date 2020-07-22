@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+	<title>RWT Cruise Campaign</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<!-- XMPie XMPL library -->
+	<link href="https://ajax.xmcircle.com/ajax/libs/xmpl/3.1.4/xmp/css/xmp.css" rel="stylesheet" media="screen">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://ajax.xmcircle.com/ajax/libs/xmpl/3.1.4/xmp/js/xmp.min.js"></script>
+	<script src="./xmpcfg.js"></script>
+	</head>
+	<body class="index" ng-app="xmp.app" 
+    ng-controller="XMPPersonalizedPage" 
+    xmp-cloak
+    xmp-clear-all-cookies-onload
+    xmp-tracking-page-name="Landing">>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo">Round World Travel</h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">Welcome</a></li>
+							<li class="submenu">
+								<a href="#">Site Map</a>
+								<ul>
+									<li><a href="#discover" class="scrolly">Discover</a></li>
+									<li><a href="#agenda" class="scrolly">Agenda</a></li>
+									<li><a href="#register" class="scrolly">Register</a></li>
+									<li><a href="#about" class="scrolly">About</a></li>
+								</ul>
+							</li>
+							<li><a href="#register" class="button special scrolly">Register</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner : Welcome -->
+				<section id="banner">
+					<!--
+						".inner" is set up as an inline-block so it automatically expands
+						in both directions to fit whatever's inside it. This means it won't
+						automatically wrap lines, so be sure to use line breaks where
+						appropriate (<br />).
+					-->
+					<div class="inner">
+						<header>
+						  <h2> _firstname_. <br>
+							Welcome to Diesel Form, {{xmp.r.firstName}}</h2>
+						</header>
+						<footer>
+							<ul class="buttons vertical">
+								<li><a href="#discover" class="button fit scrolly">More Info </a></li>
+							</ul>
+						</footer>
+					</div>
+				</section>
+
+			<!-- Main -->
+				<article id="discover">
+                	<!--  custom message -->
+                    <section id="message" class="wrapper style3 container special">
+                        <header class="special">
+                            <span class="icon fa-ship"></span>
+                            <h2>User Profile<br />
+                                Submit info below</h2>
+                        </header>
+                        <div class="row">
+                            <div class="6u 12u(narrower)">
+                                <section>
+                                    <p>_message_</p>
+                                </section>
+                            </div>
+                            <div class="6u 12u(narrower)">
+                                <section>
+                                    <img src="assets/images/pic01.jpg" alt="Holiday photo" />
+                                </section>
+                            </div>
+                        </div>
+                        <footer class="major">
+                            <ul class="buttons">
+                                <li><a href="#agenda" class="button scrolly">Discover more</a></li>
+                            </ul>
+                        </footer>
+                    </section>
+
+					<!-- Agenda -->
+						<section id="agenda" class="wrapper style2 container special-alt">
+							<div class="row 50%">
+								<div class="8u 12u(narrower)">
+									<header>
+										<h2></h2>
+									</header>
+									<footer>
+										<div>
+										<ul class="buttons">
+											<li><a href="#register" class="button scrolly">Register</a></li>
+										</ul>
+                                        </div>
+                                        <div style="display:none;">
+                                        <ul class="buttons">
+											<li><a href="#referral" class="button scrolly">Refer a friend</a></li>
+										</ul>
+                                        </div>
+									</footer>
+								</div>
+								<div class="4u 12u(narrower) important(narrower)">
+									<ul class="featured-icons">
+										<li><span class="icon fa-sun-o"></span></li>
+										<li><span class="icon fa-briefcase"></span></li>
+										<li><span class="icon fa-camera-retro"></span></li>
+										<li><span class="icon fa-glass"></span></li>
+                                        <li><span class="icon fa-bed"></span></li>
+                                        <li><span class="icon fa-ship"></span></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+					<!-- Register -->
+						<section id="register" class="wrapper style3 container special">
+							<header class="major">
+								<h2>Register to submit user profile</h2>
+                                <form id="registration" name="registration">
+                                	<div class="row uniform 50%">
+                                        <div class="6u 12u(mobile)">
+                                            <input name="Location Name" type="text" placeholder="{{xmp.r.LocationName}}" />
+                                        </div>
+                                        <div class="6u 12u(mobile)">
+                                            <input name="Phone" type="text" placeholder="{{xmp.r.Phone}}" />
+                                        </div>
+                                        <div class="6u 12u(mobile)">
+                                            <input name="Address1" type="text" placeholder="{{xmp.r.Address1}}" />
+                                        </div>
+                                        <div class="6u 12u(mobile)">
+                                            <input name="Address2" type="text" placeholder="{{xmp.r.Address2}}" />
+                                        </div>
+                                        <div class="6u 12u(mobile)">
+                                            <input name="City" type="text" placeholder="{{xmp.r.City}}" />
+                                        </div>
+                                        <div class="6u 12u(mobile)">
+                                            <input name="State" type="text" placeholder="{{xmp.r.State}}" />
+                                        </div>
+                                    </div>
+                                    <div class="row uniform 50%">
+                                        <div class="12u">
+                                            <input name="ZIP" type="text" placeholder="{{xmp.r.ZIP}}"  />
+                                        </div>
+                                    </div>
+                                    <div class="row uniform">
+                                        <div class="12u">
+                                        	<input name="registered" type="hidden" value="yes" />
+                                            <input type="submit" class="special" value="Register" />
+                                        </div>
+                                    </div>
+                                </form>
+							</header>
+						</section>
+                        
+                    <!-- Referral -->
+						<section id="referral" class="wrapper style3 container special" style="display:none;">
+							<header class="major">
+								<h2>_firstname_ {{xmp.r.firstName}}</h2>
+                                <form id="referralForm" name="referralForm">
+                                	<div class="row uniform 50%">
+                                        <div class="6u 12u(mobile)">
+                                            <input name="firstname" type="text" placeholder="Firstname" />
+                                        </div>
+                                        <div class="6u 12u(mobile)">
+                                            <input name="lastname" type="text" placeholder="Lastname" />
+                                        </div>
+                                    </div>
+                                    <div class="row uniform 50%">
+                                        <div class="12u">
+                                            <input name="email" type="text" placeholder="Email" />
+                                        </div>
+                                    </div>
+                                    <div class="row uniform">
+                                        <div class="12u">
+                                        	<input type="submit" class="special" value="Invite" />
+                                        </div>
+                                    </div>
+                                </form>
+							</header>
+						</section>
+				</article>
+
+			<!-- CTA -->
+				<section id="about">
+					<header>
+						<h2>This is a sample Cross Media campaign by <strong>XMPie</strong></h2>
+						<p>Find out more about XMPie and multi-channel marketing here:</p>
+					</header>
+					<footer>
+						<ul class="buttons">
+							<li><a href="http://www.xmpie.com" class="button special">About XMPie</a></li>
+							<li><a href="http://campus.xmpie.com" class="button">XMPie Campus</a></li>
+						</ul>
+					</footer>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright">
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
